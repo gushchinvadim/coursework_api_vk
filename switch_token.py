@@ -12,7 +12,7 @@ class VK:
         response = requests.get(url, params={**self.params,
         **params})
         return response.json()
-access_token = 'access_token' # токен полученный из инструкции
-user_id = 'user_id' # идентификатор пользователя vk
+access_token = '' # токен полученный из инструкции
+user_id = '' # идентификатор пользователя vk
 vk = VK(access_token, user_id)
 print(vk.users_info())
